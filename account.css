@@ -1,0 +1,204 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0e7ff, #d1e0ff); /* Soft blue gradient */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #0073e6; /* Blue header */
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0073e6;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005bb5;
+}
+
+/* Form Styling */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus,
+form input[type="file"]:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #0073e6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #005bb5;
+}
+
+/* Success and Error Messages */
+p[style*='color:green'] {
+    color: #28a745;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+p[style*='color:red'] {
+    color: #e63946;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* File Upload Display */
+hr {
+    margin: 20px auto;
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+}
+
+p a[href] {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+p a[href]:hover {
+    color: #005bb5;
+}
+
+/* Login and Registration Page Specific Styles */
+.login-container,
+.registration-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.login-container h1,
+.registration-container h1 {
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+.login-container form,
+.registration-container form {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.login-container form button,
+.registration-container form button {
+    background: #0073e6;
+}
+
+.login-container form button:hover,
+.registration-container form button:hover {
+    background: #005bb5;
+}
+
+/* Additional Styles for Registration Page */
+.registration-container {
+    max-width: 500px; /* Slightly wider for registration forms */
+}
+
+.registration-container form input[type="text"],
+.registration-container form input[type="password"],
+.registration-container form input[type="email"] {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .login-container,
+    .registration-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
